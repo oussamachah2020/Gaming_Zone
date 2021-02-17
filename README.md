@@ -1,15 +1,15 @@
 # Gaming_Zone
 Platforme made for gamers 
 
-UI/UX respected
+UI/UX respected 
 Technologies used:
-  HTML
-  CSS
-  SCSS
+  /HTML
+  /CSS
+  /SCSS
   
   I used
-    GRID
-    FLEXBOX
-    SCSS
+    /GRID
+    /FLEXBOX
+    /SCSS
     
     

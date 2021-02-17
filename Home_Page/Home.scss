@@ -1,0 +1,140 @@
+body {
+    background-image: url("image/console.jpg");
+    background-size: cover;
+}
+
+ul {
+    list-style: none;
+    display: inline-flex;
+    float: right;
+    transform: translate(-10pc,35px);
+
+    .Title {
+        margin-right: 22pc;
+        position: relative;
+        bottom: 26px;
+        font-size: x-large;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        word-spacing: 0;
+        margin-left: 2pc;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+    a:hover {
+        color: rgb(255, 30, 0);
+    }
+}
+
+article.About {
+    background: linear-gradient(-70deg,rgba(255, 123, 0, 0.699),rgba(0, 89, 255, 0.678),rgba(128, 0, 128, 0.603));
+    box-shadow: 3px 0 5px 4px rgb(223, 53, 53);
+    transform: translate(-6px,3.5cm);
+    color: white;
+    border: 3px solid rgba(255, 0, 0, 0.589);
+    border-radius: 15px;
+    margin: 0 10% 0 10%;
+
+    img#Gamer {
+        padding-left: 45%;
+        transform: translateY(-4pc);
+    }
+
+    h2.Greating {
+        text-align: center;
+        transform: translateY(-5pc);
+        width: 100%;
+        font-family: 'Reggae One', cursive;
+    }
+
+    p.info {
+        width: 60%;
+        text-align: center;
+        position: relative;
+        left: 20%;
+        bottom: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+
+    button  {
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+    #Join_button {
+        position: relative;
+        left: 40%;
+        bottom: 20px;
+        cursor: pointer;
+        padding: 10px 45px 10px 45px;
+        color: white;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+    }
+
+    #Join_button {
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+    }
+    
+    #Join_button:before {
+        content: '';
+        background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+        position: absolute;
+        top: -2px;
+        left:-2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+        border-radius: 10px;
+    }
+    
+    #Join_button:active {
+        color: #000
+    }
+    
+    #Join_button:active:after {
+        background: transparent;
+    }
+    
+    #Join_button:before {
+        opacity: 1;
+    }
+    
+    #Join_button:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+    }
+    
+    @keyframes glowing {
+        0% { background-position: 0 0; }
+        50% { background-position: 400% 0; }
+        100% { background-position: 0 0; }
+    }
+}

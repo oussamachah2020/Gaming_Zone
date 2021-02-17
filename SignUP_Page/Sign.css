@@ -1,0 +1,184 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: url("image/console.jpg");
+  background-size: cover;
+}
+
+.container {
+  -webkit-box-shadow: 3px 3px 10px rgba(128, 0, 128, 0.795);
+          box-shadow: 3px 3px 10px rgba(128, 0, 128, 0.795);
+  margin: 2% 30% 0 30%;
+  height: 39pc;
+  background: linear-gradient(-70deg, rgba(255, 0, 0, 0.795), rgba(0, 0, 255, 0.794), rgba(128, 0, 128, 0.795), rgba(255, 123, 0, 0.877));
+}
+
+h2 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding-top: 20px;
+  color: white;
+}
+
+input {
+  width: 70%;
+  margin-left: 85px;
+  margin-top: 5%;
+  padding: 15px 10px 15px 10px;
+  border: none;
+  outline: none;
+}
+
+input {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(128, 128, 128, 0.842)), to(lightgrey));
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.842), lightgrey);
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: white;
+}
+
+input:focus {
+  background: -webkit-gradient(linear, left top, right top, from(#e43832), to(#df7614));
+  background: linear-gradient(to right, #e43832, #df7614);
+  -webkit-box-shadow: 5px 5px 10px #eeb230;
+          box-shadow: 5px 5px 10px #eeb230;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+button {
+  border: none;
+  outline: none;
+  -webkit-transform: translate(-58px, 20pc);
+          transform: translate(-58px, 20pc);
+}
+
+button {
+  position: relative;
+  left: 40%;
+  bottom: 40%;
+  cursor: pointer;
+  padding: 10px 45px 10px 45px;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+}
+
+button {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+button:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  -webkit-animation: glowing 20s linear infinite;
+          animation: glowing 20s linear infinite;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+button:active {
+  color: #000;
+}
+
+button:active:after {
+  background: transparent;
+}
+
+button:before {
+  opacity: 1;
+}
+
+button:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.options {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: 15%;
+  left: 16%;
+}
+
+.options::after, .options::before {
+  content: " ";
+  background: white;
+  padding: .1px 5pc .1px 5pc;
+  margin: 0 7px 0 7px;
+}
+
+ul {
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-transform: translate(2.5pc, 8.5pc);
+          transform: translate(2.5pc, 8.5pc);
+  margin-left: 2pc;
+}
+
+ul img {
+  margin-left: 3pc;
+}
+/*# sourceMappingURL=Sign.css.map */

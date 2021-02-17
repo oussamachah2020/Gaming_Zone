@@ -1,0 +1,25 @@
+{
+    "editor.fontLigatures": true,
+"editor.fontWeight": "500",
+"window.zoomLevel": 1,
+"workbench.colorTheme": "SynthWave '84",
+"workbench.iconTheme": "material-icon-theme",
+"liveServer.settings.donotShowInfoMsg": true,
+"files.autoSave": "afterDelay",
+"editor.minimap.enabled": true,
+"workbench.startupEditor": "newUntitledFile",
+"C_Cpp.updateChannel": "Insiders",
+"explorer.confirmDelete": false,
+"editor.suggestSelection": "first",
+"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+"python.languageServer": "Pylance",
+"code-runner.runInTerminal": true,
+"debug.onTaskErrors": "debugAnyway",
+"[python]": {
+    
+    "editor.wordBasedSuggestions": false
+},
+"terminal.integrated.rendererType": "dom",
+"editor.renderControlCharacters": true,
+"liveServer.settings.donotVerifyTags": true
+}
